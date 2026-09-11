@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const chatbotLessons = [
   { title: 'مقدمه‌ای بر چت‌بات‌ها', subtitle: 'دستیاران هوشمند', blocks: [
@@ -32,5 +33,5 @@ const createCourse = (id: string, title: string, subtitle: string, color: string
 });
 
 export default function Chatbots() {
-  return <LessonViewer course={createCourse('chatbots', 'ساخت چت‌بات و دستیار هوشمند', 'طراحی چت‌بات‌های حرفه‌ای', 'teal', chatbotLessons)} />;
+  return <RichLessonViewer course={createCourse('chatbots', 'ساخت چت‌بات و دستیار هوشمند', 'طراحی چت‌بات‌های حرفه‌ای', 'teal', chatbotLessons)} />;
 }

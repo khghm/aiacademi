@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const designLessons = [
   { title: 'مقدمه‌ای بر طراحی با AI', subtitle: 'انقلاب در طراحی', blocks: [
@@ -34,5 +35,5 @@ const createCourse = (id: string, title: string, subtitle: string, color: string
 });
 
 export default function AIDesign() {
-  return <LessonViewer course={createCourse('design', 'طراحی گرافیک با AI', 'خلق طرح‌های حرفه‌ای', 'rose', designLessons)} />;
+  return <RichLessonViewer course={createCourse('design', 'طراحی گرافیک با AI', 'خلق طرح‌های حرفه‌ای', 'rose', designLessons)} />;
 }

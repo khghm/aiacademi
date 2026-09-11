@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const contentCourse: CourseData = {
   id: 'content',
@@ -63,5 +64,5 @@ const contentCourse: CourseData = {
 };
 
 export default function ContentCreation() {
-  return <LessonViewer course={contentCourse} />;
+  return <RichLessonViewer course={contentCourse} />;
 }

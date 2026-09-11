@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const promptCourse: CourseData = {
   id: 'prompt',
@@ -70,5 +71,5 @@ const promptCourse: CourseData = {
 };
 
 export default function PromptEngineering() {
-  return <LessonViewer course={promptCourse} />;
+  return <RichLessonViewer course={promptCourse} />;
 }

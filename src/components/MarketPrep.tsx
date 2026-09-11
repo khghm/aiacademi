@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const marketLessons = [
   { title: 'نقشه راه ورود به بازار کار AI', subtitle: 'مسیر موفقیت', blocks: [
@@ -35,5 +36,5 @@ const createCourse = (id: string, title: string, subtitle: string, color: string
 });
 
 export default function MarketPrep() {
-  return <LessonViewer course={createCourse('market', 'آماده‌سازی بازار کار', 'ورود موفق به بازار کار AI', 'emerald', marketLessons)} />;
+  return <RichLessonViewer course={createCourse('market', 'آماده‌سازی بازار کار', 'ورود موفق به بازار کار AI', 'emerald', marketLessons)} />;
 }

@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const toolsLessons = [
   { title: 'ابزارهای متنی', subtitle: 'ChatGPT, Claude, Gemini', blocks: [
@@ -32,5 +33,5 @@ const createCourse = (id: string, title: string, subtitle: string, color: string
 });
 
 export default function Tools() {
-  return <LessonViewer course={createCourse('tools', 'ابزارهای حرفه‌ای AI', 'معرفی بیش از ۳۰ ابزار', 'amber', toolsLessons)} />;
+  return <RichLessonViewer course={createCourse('tools', 'ابزارهای حرفه‌ای AI', 'معرفی بیش از ۳۰ ابزار', 'amber', toolsLessons)} />;
 }

@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const automationLessons = [
   { title: 'مفاهیم اتوماسیون با AI', subtitle: 'خودکارسازی هوشمند', blocks: [
@@ -35,5 +36,5 @@ const createCourse = (id: string, title: string, subtitle: string, color: string
 });
 
 export default function Automation() {
-  return <LessonViewer course={createCourse('automation', 'اتوماسیون کسب‌وکار با AI', 'خودکارسازی فرآیندها و صرفه‌جویی ۸۰٪', 'amber', automationLessons)} />;
+  return <RichLessonViewer course={createCourse('automation', 'اتوماسیون کسب‌وکار با AI', 'خودکارسازی فرآیندها و صرفه‌جویی ۸۰٪', 'amber', automationLessons)} />;
 }

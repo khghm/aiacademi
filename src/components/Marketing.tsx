@@ -1,4 +1,5 @@
-import LessonViewer, { CourseData } from './LessonViewer';
+import RichLessonViewer from './RichLessonViewer';
+import { CourseData } from './LessonViewer';
 
 const createCourse = (id: string, title: string, subtitle: string, color: string, lessonsData: any[]): CourseData => ({
   id, title, subtitle, badge: `۱۵ درس | ۳۰ ساعت آموزش`, color,
@@ -43,5 +44,5 @@ const marketingLessons = [
 
 export default function Marketing() {
   const course = createCourse('marketing', 'بازاریابی هوشمند با AI', 'استراتژی‌های بازاریابی مدرن با AI', 'cyan', marketingLessons);
-  return <LessonViewer course={course} />;
+  return <RichLessonViewer course={course} />;
 }
